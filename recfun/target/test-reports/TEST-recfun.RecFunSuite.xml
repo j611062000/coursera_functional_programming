@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="Sids-MacBook-Pro.local" name="recfun.RecFunSuite" tests="11" errors="0" failures="8" skipped="0" time="0.205" timestamp="2020-04-05T23:21:08">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/><property name="java.vm.version" value="25.232-b09"/><property name="gopherProxySet" value="false"/><property name="java.vm.vendor" value="AdoptOpenJDK"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="TW"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/Users/sidlin/repo/functional_programming/recfun"/><property name="java.runtime.version" value="1.8.0_232-b09"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/endorsed"/><property name="os.arch" value="x86_64"/><property name="java.io.tmpdir" value="/var/folders/8t/scz_p5s51836rxvb6dr5cgnw0000gn/T/"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/var/folders/8t/scz_p5s51836rxvb6dr5cgnw0000gn/T/jna--902558973/jna3388769749883831776.tmp"/><property name="java.library.path" value="/Users/sidlin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.15.2"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="user.home" value="/Users/sidlin"/><property name="user.timezone" value="Asia/Taipei"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/usr/local/Cellar/sbt/1.3.8/libexec/bin/sbt-launch.jar"/><property name="user.name" value="sidlin"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/usr/local/Cellar/sbt/1.3.8/libexec/bin/sbt-launch.jar"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_232"/><property name="java.ext.dirs" value="/Users/sidlin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/classes"/><property name="java.vendor" value="AdoptOpenJDK"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="recfun.RecFunSuite" name="countChange: sorted CHF" time="0.053">
+                                                 <failure message="java.lang.AssertionError: expected:&lt;1022&gt; but was:&lt;1&gt;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: expected:&lt;1022&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at recfun.RecFunSuite.countChange$colon$u0020sorted$u0020CHF(RecFunSuite.scala:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="countChange: unsorted CHF" time="0.001">
+                                                 <failure message="java.lang.AssertionError: expected:&lt;1022&gt; but was:&lt;1&gt;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: expected:&lt;1022&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at recfun.RecFunSuite.countChange$colon$u0020unsorted$u0020CHF(RecFunSuite.scala:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="countChange: example given in instructions" time="0.001">
+                                                 <failure message="java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;1&gt;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at recfun.RecFunSuite.countChange$colon$u0020example$u0020given$u0020in$u0020instructions(RecFunSuite.scala:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="balance: counting is not enough" time="0.145">
+                                                 <failure message="java.util.NoSuchElementException: head of empty list" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:599)
+	at scala.collection.immutable.Nil$.head(List.scala:598)
+	at recfun.RecFun$.loop$1(RecFun.scala:28)
+	at recfun.RecFun$.balance(RecFun.scala:34)
+	at recfun.RecFunSuite.balance$colon$u0020counting$u0020is$u0020not$u0020enough(RecFunSuite.scala:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="pascal: col=1,row=2" time="0.0">
+                                                 
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="pascal: col=1,row=3" time="0.0">
+                                                 
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="balance: ':-)' is unbalanced" time="0.001">
+                                                 <failure message="java.util.NoSuchElementException: head of empty list" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:599)
+	at scala.collection.immutable.Nil$.head(List.scala:598)
+	at recfun.RecFun$.loop$1(RecFun.scala:28)
+	at recfun.RecFun$.balance(RecFun.scala:34)
+	at recfun.RecFunSuite.balance$colon$u0020$u0027$colon$minus$u0029$u0027$u0020is$u0020unbalanced(RecFunSuite.scala:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="pascal: col=0,row=2" time="0.001">
+                                                 
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="balance: '(if (zero? x) max (/ 1 x))' is balanced" time="0.001">
+                                                 <failure message="java.util.NoSuchElementException: head of empty list" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:599)
+	at scala.collection.immutable.Nil$.head(List.scala:598)
+	at recfun.RecFun$.loop$1(RecFun.scala:28)
+	at recfun.RecFun$.balance(RecFun.scala:34)
+	at recfun.RecFunSuite.balance$colon$u0020$u0027$u0028if$u0020$u0028zero$qmark$u0020x$u0029$u0020max$u0020$u0028$div$u00201$u0020x$u0029$u0029$u0027$u0020is$u0020balanced(RecFunSuite.scala:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="countChange: no pennies" time="0.001">
+                                                 <failure message="java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at recfun.RecFunSuite.countChange$colon$u0020no$u0020pennies(RecFunSuite.scala:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase><testcase classname="recfun.RecFunSuite" name="' is balanced" time="0.001">
+                                                 <failure message="java.util.NoSuchElementException: head of empty list" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:599)
+	at scala.collection.immutable.Nil$.head(List.scala:598)
+	at recfun.RecFun$.loop$1(RecFun.scala:28)
+	at recfun.RecFun$.balance(RecFun.scala:34)
+	at recfun.RecFunSuite.balance$colon$u0020$u0027I$u0020told$u0020him$u0020$u002E$u002E$u002E$u0027$u0020is$u0020balanced(RecFunSuite.scala:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>
